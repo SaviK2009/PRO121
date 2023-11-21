@@ -32,12 +32,12 @@ while True:
         frame_rgb = cv2.cvtColor(frame , cv2.COLOR_BGR2RGB)
 
         # creating thresholds
-        lower_red = np.array([100,100,100])
-        upper_red = np.array([255,255,255])
+        lower_bound = np.array([100,100,100])
+        upper_bound = np.array([255,255,255])
         mask_1 = cv2.inRange(frame_rgb, lower_red, upper_red)
 
-        lower_red = np.array([100,100,100])
-        upper_red = np.array([255,255,255])
+        lower_bound = np.array([100,100,100])
+        upper_bound = np.array([255,255,255])
         mask_2 = cv2.inRange(frame_rgb, lower_red, upper_red)
 
         # thresholding image
